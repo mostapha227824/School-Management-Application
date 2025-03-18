@@ -1,4 +1,4 @@
-### 📌 **README for School Management App**  
+**School Management App**  
 
 ```markdown
 # 🏫 School Management App
