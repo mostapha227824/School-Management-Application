@@ -46,12 +46,12 @@ flutter run
 ```
 
 ## 🎨 UML Diagrams
-- **Use Case Diagram**: [View Here]([./diagrams/use_case_diagram.png](https://lucid.app/lucidchart/2e50b38d-6987-4efc-a250-ba8c165efe80/edit?invitationId=inv_dcf33edc-830f-428e-86b6-924d87a9a48e))
-- **Activity Diagrams**: [View Here]([./diagrams/activity_diagrams.png)](https://lucid.app/lucidchart/db00c708-b9d3-4357-92f6-6538b20686d0/edit?invitationId=inv_27380712-c929-4046-8098-6a27a49ad156))
-- ([./diagrams/activity_diagrams.png)](https://lucid.app/lucidchart/3b0186d6-a5a2-4c40-8eed-08c295512305/edit?invitationId=inv_52208ca1-6284-4ad9-8309-5f1427db9723))
+- **Use Case Diagram**: [./diagrams/use_case_diagram.png](https://lucid.app/lucidchart/2e50b38d-6987-4efc-a250-ba8c165efe80/edit?invitationId=inv_dcf33edc-830f-428e-86b6-924d87a9a48e)]
+- **Activity Diagrams**:[(./diagrams/activity_diagrams.png)](https://lucid.app/lucidchart/db00c708-b9d3-4357-92f6-6538b20686d0/edit?invitationId=inv_27380712-c929-4046-8098-6a27a49ad156)
+- (https://lucid.app/lucidchart/3b0186d6-a5a2-4c40-8eed-08c295512305/edit?invitationId=inv_52208ca1-6284-4ad9-8309-5f1427db9723))
 - (https://lucid.app/lucidchart/1b67e817-e65c-4c6e-8043-97d2f0c7f2b0/edit?invitationId=inv_3bdc23b6-b913-41ff-a89a-ac114d30c333)
 - (https://lucid.app/lucidchart/0a60ab9a-4019-4c84-9584-4a9669b9302c/edit?invitationId=inv_53bdadd4-2661-4ca3-851b-c179ed8949ea)
-- (https://lucid.app/lucidchart/0852c7d2-8d35-40e0-900c-57afcf4f6fcd/edit?invitationId=inv_208f516a-d7ad-46fe-8f20-eeecce773eba)
+- (https://lucid.app/lucidchart/0852c7d2-8d35-40e0-900c-57afcf4f6fcd/edit?invitationId=inv_208f516a-d7ad-46fe-8f20-eeecce773eba)]
 
 ## 🤝 Contribution Guidelines
 1. **Fork** the repository.
