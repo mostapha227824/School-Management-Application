@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:attendancemanagment/screens/student/student_attendance_screen.dart';
-import 'package:attendancemanagment/screens/student/student_grades_screen.dart'; // Import for grades screen
+import 'package:attendancemanagment/screens/student/student_grades_screen.dart';
+import 'package:attendancemanagment/screens/student/submit_leave_screen.dart'; // << Add this line
+import 'package:attendancemanagment/screens/student/student_leave_followup_screen.dart'; // << Add this line
 import '../../services/auth_service.dart';
 
 class StudentDashboard extends StatelessWidget {
@@ -27,17 +29,16 @@ class StudentDashboard extends StatelessWidget {
         ],
       ),
       body: Padding(
-        padding: const EdgeInsets.all(16.0), // Add padding for spacing
+        padding: const EdgeInsets.all(16.0),
         child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Text(
                 'Welcome to Student Dashboard!',
-                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold), // Direct style
+                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
               ),
-              const SizedBox(height: 40), // Space between text and buttons
+              const SizedBox(height: 40),
               ElevatedButton(
                 onPressed: () {
                   Navigator.push(
@@ -49,15 +50,14 @@ class StudentDashboard extends StatelessWidget {
                 },
                 style: ElevatedButton.styleFrom(
                   padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 32),
-                  backgroundColor: Theme.of(context).colorScheme.primary, // Apply theme primary color
-                  textStyle: TextStyle(fontSize: 16), // Custom style for button text
+                  backgroundColor: Theme.of(context).colorScheme.primary,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(12),
                   ),
                 ),
                 child: const Text('View Attendance'),
               ),
-              const SizedBox(height: 20), // Space between buttons
+              const SizedBox(height: 20),
               ElevatedButton(
                 onPressed: () {
                   Navigator.push(
@@ -69,13 +69,50 @@ class StudentDashboard extends StatelessWidget {
                 },
                 style: ElevatedButton.styleFrom(
                   padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 32),
-                  backgroundColor: Theme.of(context).colorScheme.secondary, // Apply theme secondary color
-                  textStyle: TextStyle(fontSize: 16), // Custom style for button text
+                  backgroundColor: Theme.of(context).colorScheme.secondary,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(12),
                   ),
                 ),
                 child: const Text('View Grades'),
+              ),
+              const SizedBox(height: 20),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => SubmitLeaveScreen(studentId: studentId),
+                    ),
+                  );
+                },
+                style: ElevatedButton.styleFrom(
+                  padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 32),
+                  backgroundColor: Colors.orangeAccent,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                ),
+                child: const Text('Submit Leave Request'),
+              ),
+              const SizedBox(height: 20),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => StudentLeaveFollowUpScreen(studentId: studentId),
+                    ),
+                  );
+                },
+                style: ElevatedButton.styleFrom(
+                  padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 32),
+                  backgroundColor: Colors.blueAccent,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                ),
+                child: const Text('Leave Follow-up'),
               ),
             ],
           ),
