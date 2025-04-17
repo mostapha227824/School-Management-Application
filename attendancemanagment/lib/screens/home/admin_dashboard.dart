@@ -1,28 +1,28 @@
 import 'package:flutter/material.dart';
 import '../admin/add_class_page.dart';
 import '../admin/manage_class_students_page.dart';
-import '../admin/leave_requests_page.dart'; // ✅ Import the Leave Requests Page
-import '../../services/auth_service.dart'; // Import your auth service
+import '../admin/leave_requests_page.dart'; 
+import '../../services/auth_service.dart'; 
 
 class AdminDashboard extends StatelessWidget {
-  final AuthService _auth = AuthService(); // Instantiate AuthService
+  final AuthService _auth = AuthService(); 
 
   AdminDashboard({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    final theme = Theme.of(context); // Get current theme
-    final textStyle = theme.textTheme.titleLarge; // Get titleLarge text style from theme
+    final theme = Theme.of(context); // Geting current theme
+    final textStyle = theme.textTheme.titleLarge; // Geting titleLarge text style from theme
 
     return Scaffold(
       appBar: AppBar(
         title: const Text('Admin Dashboard'),
-        backgroundColor: theme.primaryColor, // Use theme's primary color for consistency
+        backgroundColor: theme.primaryColor, // Using theme's primary color for consistency
         actions: [
           IconButton(
             icon: const Icon(Icons.logout),
             onPressed: () async {
-              await _auth.signOut();  // Call the signOut function from AuthService
+              await _auth.signOut();  
               if (context.mounted) {
                 Navigator.pushReplacementNamed(context, '/'); // Redirect to login page
               }

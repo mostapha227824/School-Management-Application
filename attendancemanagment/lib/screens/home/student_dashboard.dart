@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:attendancemanagment/screens/student/student_attendance_screen.dart';
 import 'package:attendancemanagment/screens/student/student_grades_screen.dart';
-import 'package:attendancemanagment/screens/student/submit_leave_screen.dart'; // << Add this line
-import 'package:attendancemanagment/screens/student/student_leave_followup_screen.dart'; // << Add this line
+import 'package:attendancemanagment/screens/student/submit_leave_screen.dart';
+import 'package:attendancemanagment/screens/student/student_leave_followup_screen.dart'; 
 import '../../services/auth_service.dart';
 
 class StudentDashboard extends StatelessWidget {

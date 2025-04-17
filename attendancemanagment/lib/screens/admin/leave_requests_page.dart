@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import '../../services/leave_service.dart'; // Import the service for fetching leave requests
+import '../../services/leave_service.dart'; 
 
 class LeaveRequestsPage extends StatefulWidget {
   const LeaveRequestsPage({Key? key}) : super(key: key);
@@ -29,7 +29,7 @@ class _LeaveRequestsPageState extends State<LeaveRequestsPage> {
           .doc(docId)
           .update({'status': status});
           
-      // After updating the leave request, notify the student (This can also be an FCM notification)
+      
       await FirebaseFirestore.instance
           .collection('students')
           .doc(studentId)

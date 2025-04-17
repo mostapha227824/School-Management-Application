@@ -86,7 +86,7 @@ class TeacherDashboard extends StatelessWidget {
                       child: Text('Go to Grade Taking'),
                     ),
                     const SizedBox(height: 20),
-                    Spacer(), // Push everything up if there's extra space
+                    Spacer(), 
                   ],
                 ),
               ),

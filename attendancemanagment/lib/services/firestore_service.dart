@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 class FirestoreService {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
 
-  // Adds a grade for a student in a given class and semester
+  // Adds a grade for a student in a given class 
   Future<void> addGrade({
     required String classId,
     required String semesterId,

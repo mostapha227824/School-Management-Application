@@ -94,7 +94,7 @@ class _StudentAttendanceScreenState extends State<StudentAttendanceScreen> {
                   value: doc.id,
                   child: Text(
                     doc['name'] ?? 'Unknown',
-                    style: const TextStyle(color: Colors.black, fontSize: 16), // Direct custom style
+                    style: const TextStyle(color: Colors.black, fontSize: 16), 
                   ),
                 );
               }).toList(),
